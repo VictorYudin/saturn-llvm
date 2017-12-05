@@ -45,3 +45,6 @@ deploy:
 
 only_commits:
     message: /build/
+
+on_failure:
+    - cmd: cat saturn\lib\log_llvm.txt
